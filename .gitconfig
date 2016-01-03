@@ -1,6 +1,6 @@
 [user]
-    name = Britt Gresham
-	email = brittcgresham@gmail.com
+    name = Antonio Griffin
+    email = antoniojgriffin@gmail.com
 
 [alias]
     br = branch
@@ -35,7 +35,13 @@
 [core]
     editor = vim
 
+[difftool "sourcetree"]
+    cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+    path = 
 [merge]
     tool = vimdiff
+[mergetool "sourcetree"]
+    cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+    trustExitCode = true
 [push]
     default = matching
